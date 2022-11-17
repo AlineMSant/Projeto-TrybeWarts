@@ -32,7 +32,7 @@ main {
   height: 500px;
 }
 
-input {
+#form-general input {
   width: 45%;
 }
 
@@ -40,7 +40,13 @@ select {
   width: 41%;
 }
 
-#teste {
+#form-general {
   display: flex;
   flex-wrap: wrap;
+}
+
+#family-dev {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14%;
 }
