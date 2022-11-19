@@ -13,10 +13,11 @@ btnSignIn.addEventListener('click', () => {
 const checkbox = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
 
-checkbox.addEventListener('click', function(){
-  if(btnSubmit.disabled === true){
+checkbox.addEventListener('click', function () {
+  if (btnSubmit.disabled === true) {
     btnSubmit.disabled = false;
-  }else {
+  } else {
     btnSubmit.disabled = true;
   }
 })
+
