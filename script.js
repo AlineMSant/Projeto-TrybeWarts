@@ -13,11 +13,20 @@ btnSignIn.addEventListener('click', () => {
 const checkbox = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
 
-checkbox.addEventListener('click', function () {
+checkbox.addEventListener('click', () => {
   if (btnSubmit.disabled === true) {
     btnSubmit.disabled = false;
   } else {
     btnSubmit.disabled = true;
   }
-})
+});
 
+const countTextarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+countTextarea.addEventListener('keyup', () => {
+  let maximo = 500;
+  if (countTextarea.value.length >= 0) {
+    counter.innerHTML = maximo - countTextarea.value.length;
+  }
+});
