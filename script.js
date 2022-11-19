@@ -25,8 +25,6 @@ const countTextarea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 
 countTextarea.addEventListener('keyup', () => {
-  let maximo = 500;
-  if (countTextarea.value.length >= 0) {
-    counter.innerHTML = maximo - countTextarea.value.length;
-  }
+  const maximo = 500;
+  counter.innerHTML = maximo - countTextarea.value.length;
 });
